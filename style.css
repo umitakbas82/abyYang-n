@@ -1,0 +1,880 @@
+/* --- GENEL AYARLAR --- */
+:root {
+    --bg-color: #0a0a0f;
+    /* Gece Siyahi */
+    --gold: #D4AF37;
+    /* Altın */
+    --text-light: #F4F6F0;
+    /* Ay Işığı Beyazı */
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    /* Taşmaları engelle */
+}
+
+/* --- MENÜ (NAVBAR) --- */
+.navbar {
+    background-color: rgba(10, 10, 15, 0.95);
+    /* Arkası hafif şeffaf siyah */
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    /* İncecik altın çizgi */
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    color: var(--gold) !important;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* İletişim butonu özel stil */
+.btn-iletisim {
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+    padding: 8px 25px !important;
+}
+
+.btn-iletisim:hover {
+    background-color: var(--gold);
+    color: #000 !important;
+}
+
+/* --- HERO SECTION (GİRİŞ) --- */
+.hero-section {
+    min-height: 100vh;
+    /* Tüm ekranı kapla */
+    padding-top: 80px;
+    /* Menünün altında kalmasın diye boşluk */
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    color: var(--text-light);
+    line-height: 1.3;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.hero-content p {
+    color: #cccccc;
+    font-weight: 300;
+    max-width: 500px;
+}
+
+/* --- ÖZEL BUTON --- */
+.btn-gold {
+    background-color: var(--gold);
+    color: #0a0a0f;
+    padding: 12px 40px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gold:hover {
+    background-color: #fff;
+    color: var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* --- GÖRSEL EFEKTLERİ --- */
+.hero-image {
+    max-width: 80%;
+    /* Resmi biraz küçült, çok devasa olmasın */
+    animation: float 6s ease-in-out infinite;
+    /* Hafif süzülme efekti */
+    z-index: 2;
+    position: relative;
+}
+
+/* Resmin arkasındaki altın parıltı */
+.glow-effect {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Kelebeğin havada süzülme animasyonu */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Mobilde hizalama */
+@media (max-width: 991px) {
+    .hero-content {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-content p {
+        margin: 15px auto;
+    }
+}
+
+
+/* --- BEN KİMİM BÖLÜMÜ --- */
+.about-section {
+    padding: 100px 0;
+    /* Üstten ve alttan geniş boşluk */
+    background-color: #0f0f14;
+    /* Hero'dan çok hafif farklı bir ton (Derinlik katar) */
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--text-light);
+    border-left: 3px solid var(--gold);
+    /* Sol tarafa şık bir çizgi */
+    padding-left: 20px;
+    /* Çizgi ile yazı arası boşluk */
+}
+
+.about-text {
+    color: #cccccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    /* Okunabilirliği artırır */
+    margin-top: 20px;
+}
+
+/* Resim Çerçevesi Efekti */
+.about-image-box {
+    position: relative;
+    padding: 15px;
+    /* Resim ile çerçeve arasındaki boşluk */
+    border: 1px solid var(--gold);
+    /* İnce altın çerçeve */
+    border-radius: 2px;
+    /* Keskin köşeler yerine çok hafif yumuşaklık */
+    transition: transform 0.3s ease;
+}
+
+.about-image-box img {
+    border-radius: 2px;
+    filter: sepia(20%) contrast(110%);
+    /* Resme hafif eski/mistik bir hava katar */
+}
+
+.about-image-box:hover {
+    transform: translateY(-5px);
+    /* Üzerine gelince hafifçe yukarı kalkar */
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+    /* Altın gölge */
+}
+
+/* İmza Alanı */
+.signature {
+    font-family: 'Cinzel', serif;
+    /* El yazısı fontu da kullanabiliriz ama Cinzel şık durur */
+    color: var(--gold);
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* --- HİZMETLER BÖLÜMÜ --- */
+.services-section {
+    padding: 100px 0;
+    background-color: #0a0a0f;
+    /* Ana arka plan rengi */
+}
+
+/* Hizmet Kutusu Tasarımı */
+.service-box {
+    background-color: #111116;
+    /* Kutunun kendi rengi (biraz daha açık siyah) */
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    /* Çok silik altın çerçeve */
+    padding: 40px 20px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    height: 100%;
+    /* Kutuların boyunu eşitle */
+}
+
+/* Kutuya mouse ile gelince ne olsun? */
+.service-box:hover {
+    border-color: var(--gold);
+    /* Çerçeve parlasın */
+    transform: translateY(-10px);
+    /* Kutu yukarı kalksın */
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    /* Altın gölge */
+}
+
+/* İkon Tasarımı */
+.icon-wrapper {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+.service-box h3 {
+    font-family: var(--font-heading);
+    color: var(--text-light);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Liste (Maddeler) Tasarımı */
+.service-list {
+    list-style: none;
+    /* Noktaları kaldır */
+    padding: 0;
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Her maddenin başına küçük altın bir çizgi koyalım */
+.service-list li::before {
+    content: "•";
+    color: var(--gold);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* İçi Boş Altın Buton (Outline Button) */
+.btn-outline-gold {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: #000;
+}
+
+/* --- HİZMET KUTULARI ARKA PLAN AYARLARI --- */
+
+/* Tüm kutular için ortak ayar: Resmi ortala ve kapla */
+.service-box {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /* Yazıların daha net okunması için hafif gölge */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* KUTU 1: Doğum Haritası */
+.box-1 {
+    /* Resim + %85 Siyah Karartma */
+    background: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)), url('/assets/img/services1.jpg');
+}
+
+/* KUTU 2: İlişki Uyumu */
+.box-2 {
+    background: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)), url('/assets/img/services2.jpg');
+}
+
+/* KUTU 3: Kariyer */
+.box-3 {
+    background: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)), url('/assets/img/services3.jpg');
+}
+
+/* KUTU 4: Transitler */
+.box-4 {
+    background: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)), url('/assets/img/services4.jpg');
+}
+
+/* --- HOVER EFEKTİ (Önemli Dokunuş) --- */
+/* Mouse ile üzerine gelince karartma biraz azalsın, resim ortaya çıksın */
+.service-box:hover.box-1 {
+    background: linear-gradient(rgba(10, 10, 15, 0.60), rgba(10, 10, 15, 0.60)), url('/assets/img/services1.jpg');
+}
+
+.service-box:hover.box-2 {
+    background: linear-gradient(rgba(10, 10, 15, 0.60), rgba(10, 10, 15, 0.60)), url('/assets/img/services2.jpg');
+}
+
+.service-box:hover.box-3 {
+    background: linear-gradient(rgba(10, 10, 15, 0.60), rgba(10, 10, 15, 0.60)), url('/assets/img/services3.jpg');
+}
+
+.service-box:hover.box-4 {
+    background: linear-gradient(rgba(10, 10, 15, 0.60), rgba(10, 10, 15, 0.60)), url('/assets/img/services4.jpg');
+}
+
+/* --- GÖKYÜZÜ GÜNLÜĞÜ --- */
+.journal-section {
+    padding: 80px 0;
+    background-color: #0f0f14;
+    /* Ben Kimim bölümüyle aynı ton */
+}
+
+/* Başlığın altındaki ince altın çizgi */
+.gold-divider {
+    width: 100px;
+    height: 2px;
+    background-color: var(--gold);
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Çizginin ortasına minik yıldız koyalım */
+.gold-divider::after {
+    content: "★";
+    color: var(--gold);
+    background-color: #0f0f14;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+/* Liste Tasarımı */
+.journal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Maddeler arası boşluk */
+}
+
+.journal-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.03);
+    /* Çok hafif şeffaf beyaz */
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 20px 30px;
+    border-radius: 50px;
+    /* Hap şeklinde yuvarlak kenarlar */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.journal-text {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.journal-icon,
+.journal-arrow {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+/* Hover (Üzerine Gelince) */
+.journal-item:hover {
+    background-color: var(--gold);
+    /* Arka plan altın olsun */
+    border-color: var(--gold);
+    transform: translateX(10px);
+    /* Hafif sağa kaysın */
+}
+
+.journal-item:hover .journal-text,
+.journal-item:hover .journal-icon,
+.journal-item:hover .journal-arrow {
+    color: #000;
+    /* Yazılar siyah olsun */
+}
+
+/* --- FOOTER (ALT KISIM) --- */
+.site-footer {
+    padding: 60px 0 30px;
+    background-color: #050508;
+    /* En koyu siyah */
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    letter-spacing: 3px;
+}
+
+.social-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: var(--gold);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
+    width: 50%;
+}
+
+.copyright-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* --- İLETİŞİM FORMU TASARIMI --- */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: #0a0a0f;
+    /* Ana siyah */
+}
+
+/* Form Kutusu ve Alanları */
+.custom-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    /* Çok hafif şeffaf */
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+    /* Silik altın çerçeve */
+    color: #fff !important;
+    /* Yazı rengi beyaz */
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Form alanına tıklayınca (Focus) */
+.custom-input:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--gold) !important;
+    /* Çerçeve parlasın */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2) !important;
+    /* Hafif altın ışık */
+    color: var(--gold) !important;
+}
+
+/* Tarih ve Saat ikonlarının rengini düzeltme (Webkit tarayıcılar için) */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    /* İkonları beyaza çevirir */
+    cursor: pointer;
+}
+
+/* Select kutusu ok işareti */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23D4AF37' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+/* Form Etiketleri */
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* --- İLETİŞİM SAYFASI ÖZEL (Mini Sayfa) --- */
+
+.contact-page-body {
+    background-color: #0a0a0f;
+    height: 100vh;
+    /* Sayfa yüksekliği ekran kadar olsun */
+    overflow: hidden;
+    /* Kaydırma çubuğunu gizle (sığarsa) */
+}
+
+.contact-card-section {
+    height: 100vh;
+    /* İçeriği dikeyde ortalamak için */
+}
+
+.contact-card {
+    background-color: #0f0f14;
+    border: 1px solid var(--gold);
+    /* Altın Çerçeve */
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.15);
+    /* Altın ışık yayma efekti */
+    position: relative;
+}
+
+/* En üstteki büyük ikon */
+.contact-icon-top {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* İletişim Satırları (Email & Insta) */
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateX(5px);
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--gold);
+}
+
+/* Alt kısımdaki not */
+.contact-note {
+    background-color: rgba(212, 175, 55, 0.05);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: #ccc;
+    border: 1px dashed rgba(212, 175, 55, 0.3);
+}
+
+/* Mobilde ekran küçükse kaydırmaya izin ver */
+@media (max-height: 700px) {
+    .contact-page-body {
+        height: auto;
+        overflow: auto;
+        padding: 50px 0;
+    }
+}
+
+/* --- DANIŞMANLIK SAYFASI STİLLERİ --- */
+
+.consulting-page-body {
+    background-color: #0a0a0f;
+    min-height: 100vh;
+}
+
+.pricing-section {
+    padding: 120px 0 80px;
+    /* Üstten boşluk (Navbar için) */
+}
+
+/* Fiyat Kartı Tasarımı */
+.pricing-card {
+    background-color: #0f0f14;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    /* Silik çerçeve */
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    height: 100%;
+    position: relative;
+}
+
+/* Kartın Üzerine Gelince */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    /* Yukarı kalksın */
+    border-color: var(--gold);
+    /* Çerçeve altın olsun */
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
+    /* Altın ışık */
+}
+
+/* Ortadaki Kartı (Synastry) biraz farklı yapalım mı? */
+.featured-card {
+    background: linear-gradient(to bottom, #0f0f14, #16161e);
+    border-color: rgba(212, 175, 55, 0.5);
+    /* Daha belirgin çerçeve */
+}
+
+/* Tepe İkonu (Emoji) */
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Paket Başlığı */
+.package-title {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    min-height: 60px;
+    /* Başlıklar 2 satır olsa bile hizalı dursun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Süre Bilgisi */
+.package-duration {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Özellik Listesi */
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    /* Maddeler sola hizalı olsun */
+    color: #ddd;
+}
+
+.package-features li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Fiyat Etiketi */
+.price-tag {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.price-tag::after {
+    content: " (KDV Dahil)";
+    font-size: 0.7rem;
+    color: #666;
+    font-weight: normal;
+    display: block;
+}
+
+/* --- HAKKIMDA SAYFASI STİLLERİ --- */
+
+.about-page-body {
+    background-color: #0a0a0f;
+    min-height: 100vh;
+}
+
+.about-hero-section {
+    padding: 150px 0 80px;
+    /* Navbar payı */
+}
+
+/* Portre Resmi Tasarımı */
+.about-portrait-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.about-portrait {
+    border-radius: 5px;
+    filter: grayscale(20%);
+    /* Hafif siyah beyaz ton */
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Resmin arkasındaki altın çerçeve efekti */
+.portrait-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--gold);
+    transform: translate(-15px, -15px);
+    /* Çerçeveyi biraz kaydır */
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.about-portrait-wrapper:hover .portrait-border {
+    transform: translate(-5px, -5px);
+    /* Hover olunca çerçeve resme yaklaşsın */
+}
+
+/* Motto Kutusu */
+.motto-box {
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* --- DEĞERLER / PRENSİPLER BÖLÜMÜ --- */
+.values-section {
+    padding: 60px 0 100px;
+    background-color: #0f0f14;
+    /* Hafif ton farkı */
+}
+
+.value-card {
+    padding: 30px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+    background-color: rgba(212, 175, 55, 0.05);
+}
+
+.value-card h4 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* --- İLETİŞİM SAYFASI (YENİLENMİŞ) --- */
+
+.contact-page-body {
+    background-color: #0a0a0f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ana Bölüm Hizalaması */
+.contact-split-section {
+    flex-grow: 1;
+    /* Sayfanın kalanını kapla */
+    padding: 120px 0 50px;
+    /* Navbar payı + Alt boşluk */
+    min-height: 100vh;
+    /* Tam ekran hissi */
+}
+
+/* --- SOL TARAF: FORM TASARIMI --- */
+.contact-form-wrapper {
+    background-color: rgba(15, 15, 20, 0.6);
+    /* Hafif şeffaf koyu zemin */
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Çok silik çerçeve */
+}
+
+/* Input alanları (Daha önce eklemiştik ama garanti olsun) */
+.custom-input {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+    color: #fff !important;
+    border-radius: 8px;
+}
+
+.custom-input:focus {
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2) !important;
+}
+
+/* --- SAĞ TARAF: BİLGİ KARTI --- */
+.contact-card {
+    background-color: #0f0f14;
+    border: 1px solid var(--gold);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
+    position: relative;
+}
+
+.contact-icon-top {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateX(5px);
+}
+
+.contact-note {
+    background-color: rgba(212, 175, 55, 0.05);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: #ccc;
+    border: 1px dashed rgba(212, 175, 55, 0.3);
+}
+
+/* Animasyon: Aşağıdan Yukarı Belirme */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
