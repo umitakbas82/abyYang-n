@@ -642,3 +642,106 @@ body {
 .hover-gold:hover {
     color: #FFC107 !important;
 }
+
+/* --- HİZMETLER SAYFASI TASARIMI --- */
+
+.services-page-body {
+    background-color: #000;
+}
+
+/* Başlık Alanı */
+.services-header-section {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #FFC107;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hizmet Kartları Grid */
+.services-grid-section {
+    padding-bottom: 100px;
+}
+
+.service-card {
+    background-color: #1a1a20;
+    /* Görseldeki koyu gri/lacivert ton */
+    border-radius: 12px;
+    overflow: hidden;
+    /* Resim taşmasın */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    /* Hover'da yukarı kalkış */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 193, 7, 0.3);
+}
+
+/* Kart Resmi */
+.service-img-wrapper {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Kart üstüne gelince resim biraz büyüsün */
+.service-card:hover .service-img {
+    transform: scale(1.1);
+}
+
+/* Kart İçeriği */
+.service-body {
+    padding: 25px;
+}
+
+.service-icon {
+    color: #FFC107;
+    font-size: 1.5rem;
+}
+
+.service-title {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.service-desc {
+    color: #adb5bd;
+    /* Açık gri */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}

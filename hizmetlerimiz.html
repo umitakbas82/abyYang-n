@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="services-page-body">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
@@ -47,64 +47,213 @@
             </div>
         </div>
     </nav>
-    <section class=" d-flex align-items-center text-center mt-5">
-        <div class="overlay"></div>
+    <section class="services-header-section text-center">
+        <div class="container">
+            <h2 class="section-title text-white">HİZMETLERİMİZ</h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="section-subtitle text-secondary mt-3">
+                Eviniz ve iş yeriniz için en son teknoloji güvenlik çözümleri.
+            </p>
+        </div>
+    </section>
 
-        <div class="container position-relative" style="z-index: 2;margin-top: 150px;">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="row g-4">
 
-
-                    <h1 class="display-3 fw-bold text-white  animate-fade-up">
-
-                        <span class="text-gold" style="font-family: Cinzel; ">HİZMETLERİMİZ</span>
-                    </h1>
-
-                    <p class="lead text-light-grey mb-5 mx-auto animate-fade-up delay-1" style="max-width: 800px;">
-                        Eviniz ve iş yeriniz için son teknoloji güvenlik çözümleri
-                    </p>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                    </div>
-                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1626127027581-28ee1345d319?q=80&w=2070&auto=format&fit=crop"
+                                alt="Yangın Alarmı" class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-bell-fill service-icon"></i>
+                                <h4 class="service-title">YANGIN ALGILAMA</h4>
                             </div>
-                            <div class="col">
-                                <div class="card">text</div>
-                            </div>
-                            <div class="col">
-                                <div class="card">text</div>
-                            </div>
+                            <p class="service-desc">
+                                Erken uyarı sistemleri ile can ve mal güvenliğinizi maksimum seviyede koruyoruz.
+                                Adreslenebilir sistemler ve gaz dedektörleri.
+                            </p>
                         </div>
                     </div>
-                    <div class="container my-5">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">text</div>
-                            </div>
-                            <div class="col">
-                                <div class="card">text</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
 
-            <div class="scroll-down mt-5">
-                <!-- <i class="bi bi-chevron-down text-gold fs-3 bounce-animation"></i> -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="./assets/img/modern-security-camera-indoors.jpg" alt="CCTV Kamera"
+                                class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-camera-video-fill service-icon"></i>
+                                <h4 class="service-title">KAMERA (CCTV)</h4>
+                            </div>
+                            <p class="service-desc">
+                                7/24 kayıt ve uzaktan izleme özellikli yüksek çözünürlüklü güvenlik kameraları. Gece
+                                görüşlü ve hareket sensörlü çözümler.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="./assets/img/fingerprint-access-control.jpg" alt="Geçiş Kontrol"
+                                class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-fingerprint service-icon"></i>
+                                <h4 class="service-title">GEÇİŞ KONTROL</h4>
+                            </div>
+                            <p class="service-desc">
+                                Kartlı geçiş, parmak izi ve yüz tanıma sistemleri ile yetkisiz girişleri engelleyin.
+                                Personel takip entegrasyonu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=2071&auto=format&fit=crop"
+                                alt="Hırsız Alarmı" class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-shield-lock-fill service-icon"></i>
+                                <h4 class="service-title">HIRSIZ ALARMI</h4>
+                            </div>
+                            <p class="service-desc">
+                                Ev ve işyeriniz için hassas sensörlerle donatılmış hırsız alarm sistemleri. Mobil
+                                bildirim ve 7/24 takip merkezi desteği.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1623944890664-9602330a6c0b?q=80&w=2070&auto=format&fit=crop"
+                                alt="Söndürme Sistemleri" class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-droplet-fill service-icon"></i>
+                                <h4 class="service-title">SÖNDÜRME SİSTEMLERİ</h4>
+                            </div>
+                            <p class="service-desc">
+                                Otomatik sprinkler, gazlı söndürme ve davlumbaz sistemleri ile yangına anında müdahale
+                                çözümleri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="service-img-wrapper">
+                            <img src="./assets/img/smart-house.jpg" alt="Akıllı Ev" class="service-img">
+                        </div>
+                        <div class="service-body">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="bi bi-house-gear-fill service-icon"></i>
+                                <h4 class="service-title">AKILLI EV SİSTEMLERİ</h4>
+                            </div>
+                            <p class="service-desc">
+                                Güvenlik, ısıtma ve aydınlatmayı tek noktadan yönetin. Mobil uygulama ile eviniz her an
+                                kontrol altında.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 mb-4 text-decoration-none" href="#">
+                        <div class="footer-logo-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                            <span class="footer-brand-title">ABY</span>
+                            <span class="footer-brand-subtitle">FIRE & SECURITY SYSTEMS</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        Güvenlik ve yangın sistemlerinde Ankara'nın güvenilir çözüm ortağı. <br>
+                        Sizin güvenliğiniz, bizim önceliğimiz.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">HIZLI ERİŞİM</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">HİZMETLER</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Yangın Alarmı</a></li>
+                        <li><a href="#">Kamera Sistemleri</a></li>
+                        <li><a href="#">Hırsız Alarmı</a></li>
+                        <li><a href="#">Geçiş Kontrol</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">ÇALIŞMA SAATLERİ</h5>
+                    <ul class="list-unstyled working-hours">
+                        <li class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Pazartesi - Cuma</span>
+                            <span class="text-white">09:00 - 18:00</span>
+                        </li>
+                        <li class="d-flex justify-content-between mb-2">
+                            <span class="text-secondary">Cumartesi</span>
+                            <span class="text-white">10:00 - 15:00</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span class="text-secondary">Pazar</span>
+                            <span class="text-gold fw-bold">Kapalı</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="row align-items-center copyright-section">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-secondary small">© 2026 ABY Fire & Security Systems. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none me-3 hover-gold">Gizlilik
+                        Politikası</a>
+                    <a href="#" class="text-secondary small text-decoration-none hover-gold">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
