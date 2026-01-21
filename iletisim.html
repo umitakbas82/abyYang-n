@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABY YANGIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="logo-icon-box">
+                    <i class="bi bi-fire"></i>
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <span class="brand-title">ABY</span>
+                    <span class="brand-subtitle">FIRE & SECURITY SYSTEMS</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hizmetlerimiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">Sistem Seçici</a></li>
+                </ul>
+
+                <div class="nav-btn-container">
+                    <a href="iletisim.html" class="btn btn-gold rounded-pill px-4 fw-bold">İletişim</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="final-contact-section " style="margin-top: 120px;  margin-bottom: 80px;">
+
+
+        <div class="row g-0 shadow-lg rounded-4 overflow-hidden align-items-stretch">
+
+            <div class="col-lg-6">
+                <div class="contact-form-wrapper h-100 p-5 ">
+                    <div class="text-start mb-4">
+                        <p class="text-gold">Bize Ulaşın</p>
+                        <h3 class="text-white mb-2">Ücretsiz Keşif Desteği</h3>
+                        <p class="text-secondary small">Sorularınız veya talepleriniz için formu doldurabilirsiniz.
+                        </p>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="text-gold small mb-1">Adınız Soyadınız</label>
+                                <input type="text" name="ad_soyad" class="form-control custom-input"
+                                    placeholder="İsim Giriniz" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="text-gold small mb-1">Telefon</label>
+                                <input type="tel" name="telefon" class="form-control custom-input"
+                                    placeholder="05XX XXX XX XX" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="text-gold small mb-1">E-Posta Adresiniz</label>
+                            <input type="email" name="email" class="form-control custom-input"
+                                placeholder="ornek@mail.com" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="text-gold small mb-1">Mesajınız / Açıklama</label>
+                            <textarea name="mesaj" rows="4" class="form-control custom-input"
+                                placeholder="Size nasıl yardımcı olabilirim?" required></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-gold w-100 py-3 fw-bold fs-5 shadow-effect">
+                            <span id="btnText"> GÖNDER </span>
+                            <span id="btnLoader" class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 position-relative">
+
+
+
+                <div class="map-overlay-cards">
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="mini-info-card">
+                                <i class="bi bi-telephone-fill text-gold fs-4"></i>
+                                <div>
+                                    <small class="text-gold d-block fw-bold">TELEFON</small>
+                                    <a href="tel:05388186364" class="text-white text-decoration-none">0538 818 63
+                                        64</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mini-info-card">
+                                <i class="bi bi-envelope-fill text-gold fs-4"></i>
+                                <div>
+                                    <small class="text-gold d-block fw-bold">E-POSTA</small>
+                                    <a href="mailto:info@abysecurity.com"
+                                        class="text-white text-decoration-none">info@abysecurity.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mini-info-card">
+                                <i class="bi bi-geo-alt-fill text-gold fs-4"></i>
+                                <div>
+                                    <small class="text-gold d-block fw-bold">ADRES</small>
+                                    <span class="text-white small">Karapürçek, 393. Sok No: /A
+                                        Altındağ/Ankara</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container h-100 w-100">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Karapürçek,+393.+Sok+No:+/A,+Altındağ+/+Ankara&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <a href <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
