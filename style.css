@@ -438,4 +438,207 @@ body {
             border: 1px dashed rgba(212, 175, 55, 0.3);
         }
     }
+
+
+    /* --- FOOTER TASARIMI --- */
+    .site-footer {
+        background-color: #000;
+        /* Tam Siyah */
+        padding-top: 80px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        /* Üstte çok hafif çizgi */
+        margin-top: 100px;
+        /* Üstteki içerikle yapışmasın */
+    }
+
+    /* Footer Logo Tasarımı */
+    .footer-logo-icon {
+        width: 35px;
+        height: 35px;
+        border: 1px solid #FFC107;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFC107;
+        font-size: 1rem;
+    }
+
+    .footer-brand-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    .footer-brand-subtitle {
+        font-size: 0.5rem;
+        color: #999;
+        letter-spacing: 1px;
+    }
+
+    /* Açıklama Yazısı */
+    .footer-desc {
+        color: #6c757d;
+        /* Bootstrap secondary gri */
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+
+    /* Başlıklar */
+    .footer-heading {
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    /* Linkler */
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .footer-links a {
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #FFC107;
+        /* Hover olunca Gold */
+        padding-left: 5px;
+        /* Hafif sağa kayma efekti */
+    }
+
+    /* Çalışma Saatleri */
+    .working-hours li {
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        /* Satır arası hafif çizgi */
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+
+    .working-hours li:last-child {
+        border-bottom: none;
+    }
+
+    /* Alt Çizgi ve Copyright */
+    .footer-divider {
+        border-color: rgba(255, 255, 255, 0.1);
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .hover-gold:hover {
+        color: #FFC107 !important;
+    }
+}
+
+/* --- FOOTER TASARIMI --- */
+.site-footer {
+    background-color: #000;
+    /* Tam Siyah */
+    padding-top: 80px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* Üstte çok hafif çizgi */
+    margin-top: 100px;
+    /* Üstteki içerikle yapışmasın */
+}
+
+/* Footer Logo Tasarımı */
+.footer-logo-icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #FFC107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFC107;
+    font-size: 1rem;
+}
+
+.footer-brand-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.footer-brand-subtitle {
+    font-size: 0.5rem;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* Açıklama Yazısı */
+.footer-desc {
+    color: #6c757d;
+    /* Bootstrap secondary gri */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Başlıklar */
+.footer-heading {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Linkler */
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFC107;
+    /* Hover olunca Gold */
+    padding-left: 5px;
+    /* Hafif sağa kayma efekti */
+}
+
+/* Çalışma Saatleri */
+.working-hours li {
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    /* Satır arası hafif çizgi */
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.working-hours li:last-child {
+    border-bottom: none;
+}
+
+/* Alt Çizgi ve Copyright */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.hover-gold:hover {
+    color: #FFC107 !important;
 }
