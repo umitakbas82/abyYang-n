@@ -19,6 +19,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     transition: all 0.3s ease;
+    gap: 30px;
 }
 
 /* --- LOGO TASARIMI --- */
@@ -68,6 +69,7 @@ body {
     position: relative;
     opacity: 0.9;
     transition: all 0.3s;
+    margin-left: 0 !important;
 }
 
 /* Hover Efekti: Altına çizgi çekme */
