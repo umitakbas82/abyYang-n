@@ -747,3 +747,93 @@ body {
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/* --- HAKKIMIZDA SAYFASI TASARIMI --- */
+
+.about-page-body {
+    background-color: #000;
+}
+
+.about-section {
+    padding-top: 180px;
+    /* Navbar payı */
+    padding-bottom: 100px;
+}
+
+/* GÖRSEL ALANI (GLOW EFEKTİ) */
+.about-img-container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-main-img {
+    /* Resmin etrafına o sarı hüzmeyi veriyoruz */
+    box-shadow: -20px -20px 60px rgba(255, 193, 7, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 10+ YILLIK TECRÜBE ROZETİ */
+.experience-badge {
+    position: absolute;
+    bottom: -30px;
+    /* Resmin dışına taşır */
+    right: -20px;
+    /* Sağa taşır */
+    background-color: #FFC107;
+    /* Gold Zemin */
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Küçük yazılar arası boşluk (letter-spacing) */
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* LİSTE İKONLARI */
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 193, 7, 0.1);
+    /* Soluk sarı zemin */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFC107;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    /* Küçülmesini engelle */
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 991px) {
+    .about-section {
+        padding-top: 120px;
+    }
+
+    .experience-badge {
+        right: 20px;
+        /* Mobilde sağdan içeri al */
+        bottom: -20px;
+        padding: 15px 20px;
+    }
+
+    .experience-badge .display-5 {
+        font-size: 2rem;
+        /* Yazıyı biraz küçült */
+    }
+
+    .col-lg-6.ps-lg-5 {
+        padding-left: 15px !important;
+        /* Mobilde sol boşluğu sıfırla */
+        margin-top: 50px;
+        /* Resim ile yazı arasını aç */
+    }
+}
