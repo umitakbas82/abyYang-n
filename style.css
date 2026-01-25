@@ -106,7 +106,7 @@ body {
     position: relative;
     height: 100vh;
     /* Tam ekran yükseklik */
-    background-image: url('/assets/img/mainbackground.jpg');
+    background-image: url('/assets/img/mainbackground.jpeg');
     /* Teknoloji Görseli */
     background-size: cover;
     background-position: center;
