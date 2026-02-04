@@ -38,7 +38,7 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'mail.abysecurity.com'; // ÖRNEK: Hosting mail sunucun
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@abysecurity.com'; // ÖRNEK: Gönderen mail
+    $mail->Username   = 'info@abyyangin.com'; // ÖRNEK: Gönderen mail
     $mail->Password   = 'mail_sifresi_buraya';  // ÖRNEK: Mail şifresi
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;

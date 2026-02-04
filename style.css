@@ -22,6 +22,36 @@ body {
     gap: 30px;
 }
 
+.navbar-toggler {
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* Çerçevesi silik gri olsun */
+    outline: none;
+    box-shadow: none !important;
+    /* Tıklayınca çıkan mavi ışığı kapat */
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+/* Butonun üzerine gelince (Hover) çerçeve biraz parlasın */
+
+
+/* İÇERİDEKİ ÇİZGİLER (HAMBURGER İKONU) */
+.navbar-toggler-icon {
+    /* Aşağıdaki kodda 'stroke' kısmını '%23b0b0b0' yaptık. 
+       Bu renk kodu (#b0b0b0) açık gri/gümüş rengidir.
+    */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23b0b0b0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+    transition: transform 0.3s ease;
+}
+
+/* Tıklayınca ikon hafif dönsün (Efekt) */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23b0b0b0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M24 6L6 24'/%3e%3c/svg%3e") !important;
+    transform: none !important;
+    ;
+}
+
 /* --- LOGO TASARIMI --- */
 .logo-icon-box {
     width: 40px;
