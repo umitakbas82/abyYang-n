@@ -36,19 +36,19 @@ $mail = new PHPMailer(true);
 try {
     // --- SMTP AYARLARI (BURALARI ABY GÜVENLİK MAİLİNE GÖRE DOLDUR) ---
     $mail->isSMTP();
-    $mail->Host       = 'mail.abysecurity.com'; // ÖRNEK: Hosting mail sunucun
+    $mail->Host       = 'mail.kurmsaleposta.com'; // ÖRNEK: Hosting mail sunucun
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@abyyangin.com'; // ÖRNEK: Gönderen mail
-    $mail->Password   = 'mail_sifresi_buraya';  // ÖRNEK: Mail şifresi
+    $mail->Password   = 'gTL.399166bA';  // ÖRNEK: Mail şifresi
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
     $mail->CharSet    = 'UTF-8';
 
     // --- KİMDEN ---
-    $mail->setFrom('info@abysecurity.com', 'ABY Güvenlik Web');
+    $mail->setFrom('info@abyyangin.com', 'ABY Güvenlik Web');
 
     // --- KİME GİDECEK? ---
-    $mail->addAddress('info@abysecurity.com'); // Kendine gönder
+    $mail->addAddress('info@abyyangin.com'); // Kendine gönder
     // $mail->addAddress('baska_mail@gmail.com'); // İstersen yedeği buraya gönder
 
     // --- CEVAPLA DİYİNCE MÜŞTERİ ÇIKSIN ---
